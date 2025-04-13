@@ -4,15 +4,22 @@ import { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <Stack>
       <Stack flexDirection={"column"}>
-        <Box>Popular Properties</Box>
-        <Box>Top agents</Box>
-        <Box>Top Properties</Box>
-        <Box>Events</Box>
+        <Stack>
+          <Stack>Popular Properties</Stack>
+        </Stack>
+        <Stack>
+          <Stack>Top agents</Stack>
+        </Stack>
+        <Stack>
+          <Stack>Top Properties</Stack>
+        </Stack>
+        <Stack>
+          <Stack>Events</Stack>
+        </Stack>
       </Stack>
-    </Container>
-
+    </Stack>
   );
 };
 
