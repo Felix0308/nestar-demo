@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
-import Footer from "../Footer";
 import Top from "../Top";
+import Footer from "../Footer";
 import HeaderFilter from "../homepage/HeaderFilter";
 
 const withLayoutMain = (Component: any) => {
@@ -9,15 +9,17 @@ const withLayoutMain = (Component: any) => {
     return (
       <>
         <Head>
-          <title>Nestar</title>
+          <title>Nestar home</title>
         </Head>
-        <Stack id="ps-wrap">
+
+        <Stack id="pc-wrap">
           <Stack id={"top"}>
-            <Top/>
+            <Top />
           </Stack>
+
           <Stack className={"header-main"}>
             <Stack className={"container"}>
-              <HeaderFilter/>
+              <HeaderFilter />
             </Stack>
           </Stack>
 
@@ -26,12 +28,11 @@ const withLayoutMain = (Component: any) => {
           </Stack>
 
           <Stack id={"footer"}>
-            <Footer/>
+            <Footer />
           </Stack>
         </Stack>
       </>
     );
   };
 };
-
 export default withLayoutMain;
